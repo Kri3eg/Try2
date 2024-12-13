@@ -50,8 +50,8 @@ function Luxt1.CreateWindow(libName, logoId)
             if current.KeyCode.Name == oldKey then 
                 if LuxtLib.Enabled == true then
                     LuxtLib.Enabled = false
-                else
-                    LuxtLib.Enabled = true
+                if LuxtLib.Enabled == false then
+                LuxtLib.Enabled = true
                 end
             end
         end
